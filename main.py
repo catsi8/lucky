@@ -4,10 +4,10 @@ import random
 
 def main(page: ft.Page):
     img = ft.Image(
-        src=f"/Users/user/Dropbox/Code/python/Flet/work/code1.jpg",
+        src=f"/code1.jpg",
         
     )
-    images=ft.Image(src=f"/Users/user/Dropbox/Code/python/Flet/work/code1.jpg")
+    images=ft.Image(src=f"./code1.jpg")
     page.add(img)
     def click(e):
         t.value = f"資料分別是: '{tb2.value}', '{tb3.value}', '{tb4.value}'"
