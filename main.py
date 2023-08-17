@@ -15,7 +15,8 @@ def main(page: ft.Page):
         i=random.randint(1, 65)
         images.controls.append(
             ft.Image(
-                src=f"{img_path}/A_{i}.png",
+                #src=f"{img_path}/A_{i}.png",
+                src=f"A_{i}.png"
                 width=400,
                 height=900,
                 fit=ft.ImageFit.NONE,
