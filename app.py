@@ -1,5 +1,12 @@
 import flet as ft
 import random
+
+img_path = os.path.join(
+    os.path.dirname(os.path.realpath(__file__)),
+    "img"
+)
+
+
 def main(page: ft.Page):
     images = ft.Row(expand=1, wrap=False, scroll="always")
     def click(e):
@@ -8,7 +15,7 @@ def main(page: ft.Page):
         i=random.randint(1, 65)
         images.controls.append(
             ft.Image(
-                src=f"/static/img/A_{i}.png",
+                src=f"{img_path}/A_{i}.png",
                 width=400,
                 height=900,
                 fit=ft.ImageFit.NONE,
