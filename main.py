@@ -8,6 +8,8 @@ def main(page: ft.Page):
         
     )
     images=ft.Image(src=f"./code1.jpg")
+    img2=ft.Image("/code1.jpg")
+    img3=ft.Image("./code1.jpg")
     page.add(img)
     def click(e):
         t.value = f"資料分別是: '{tb2.value}', '{tb3.value}', '{tb4.value}'"
@@ -31,7 +33,7 @@ def main(page: ft.Page):
     #d=ft.Text("你是好人")
     t2 = ft.ElevatedButton(text="按下去抽獎", on_click=show)     #就是按下去執行後面的函數
     page.add(t2)
-    page.add(images)
+    page.add(images,img2,img3)
     
     
 ft.app(target=main)
