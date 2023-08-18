@@ -20,7 +20,7 @@ def main(page: ft.Page):
                 src=f"/img/A_{i}.png",
                 width=400,
                 height=900,
-                fit=ft.ImageFit.NONE,
+                fit=ft.ImageFit.FILL,
                 repeat=ft.ImageRepeat.NO_REPEAT,
                 border_radius=ft.border_radius.all(1),
             )
